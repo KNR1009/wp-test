@@ -73,20 +73,19 @@
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
         <?php if (have_posts()) : ?>
-          <?php while (have_posts()) : ?>
+          <?php while (have_posts()) : the_post() ?>
             <div class="post-preview">
-              <a href="post.html">
+              <a href="<?php the_permalink(); ?>">
                 <h2 class="post-title">
-                  <?php the_post(); ?>
                   <?php the_title(); ?>
-
                 </h2>
                 <h3 class="post-subtitle">
+                  <?php the_excerpt() ?>
                 </h3>
               </a>
               <p class="post-meta">Posted by
                 <a href="#">Start Bootstrap</a>
-                on September 24, 2019
+                on <?php the_time(get_option('date_format')); ?>
               </p>
             </div>
             <hr>
