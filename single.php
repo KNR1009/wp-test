@@ -63,6 +63,8 @@
   <?php else : ?>
     <p>記事は存在しません</p>
   <?php endif; ?>
+  <? get_template_part("includes/footer") ?>
+
   <!-- Bootstrap core JavaScript -->
   <?php get_footer() ?>
 </body>
