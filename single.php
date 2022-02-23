@@ -18,14 +18,8 @@
 
       <!-- Page Header -->
       <!-- アイキャッチ画像の有無をチェック -->
-      <?php if (has_post_thumbnail()) :
-        // サムネイルに設定したアイキャッチ画像のidを取得
-        $id = get_post_thumbnail_id();
-        $img = wp_get_attachment_image_src($id, "large");
-      else :
-        // サムネイル画像がなかったらディレクトリ内のサンプル画像を表示
-        $img = array(get_template_directory_uri() . "/img/post-bg.jpg");
-      endif;
+      <?php
+      $img = get_eyecatch_with_default()
       ?>
 
       <header class="masthead" style="background-image: url('<?php echo $img[0] ?>')">
