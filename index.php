@@ -36,6 +36,7 @@
                   <?php the_title(); ?>
                 </h2>
                 <h3 class="post-subtitle">
+                  <!-- 投稿で設定した抜粋の表示 -->
                   <?php the_excerpt() ?>
                 </h3>
               </a>
