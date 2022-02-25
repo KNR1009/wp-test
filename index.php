@@ -52,7 +52,8 @@
         <?php endif; ?>
         <!-- Pager -->
         <div class="clearfix">
-          <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+          <a class="btn btn-primary float-left" href="#">古い記事へ &rarr;</a>
+          <a class="btn btn-primary float-right" href="#">新しい記事へ &rarr;</a>
         </div>
       </div>
     </div>

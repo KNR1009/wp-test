@@ -6,6 +6,9 @@
       Menu
       <i class="fas fa-bars"></i>
     </button>
+    <!-- メニューIDを取得 -->
+
+    <?php wp_nav_menu(); ?>
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">

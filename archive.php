@@ -16,7 +16,11 @@
       <div class="row">
         <div class="col-lg-8 col-md-10 mx-auto">
           <div class="site-heading">
-            <h1>カテゴリーブログ</h1>
+            <?php if (is_category()) : ?>
+              <h1>カテゴリー</h1>
+            <?php else : ?>
+              <h1>タグ</h1>
+            <?php endif; ?>
             <span class="subheading"><?php wp_title('') ?></span>
           </div>
         </div>
